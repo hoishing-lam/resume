@@ -1,3 +1,3 @@
-# resume
+# Resume
 
 My resume.
