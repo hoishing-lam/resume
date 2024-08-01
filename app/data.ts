@@ -9,7 +9,7 @@ export const resume: Resume = {
     name: '林海晟',
     gender: 'male',
     age,
-    phone: '13802720439',
+    phone: '16760203817',
     email: '504405161@qq.com',
     languages: ['国语', '英语']
   },
