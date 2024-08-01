@@ -1,0 +1,35 @@
+name: GitHub Pages
+
+on:
+  # https://github.com/orgs/community/discussions/26724
+  push:
+    branches:
+      - dev # TODO 改为 main 分支
+    paths-ignore:
+      - '**.md' # 只更改 md 文件不触发
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3 # 相当于 git clone 到当前运行的机器上
+      - name: Installation
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9.6.0 # 指定 pnpm 版本
+          run_install: true # pnpm install dependencies recursively
+      - name: Build
+        run: pnpm run build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v4
+        with:
+          folder: out
+          # 当前使用的是 GITHUB_TOKEN，另一种可选方案是 personal access token
+          # ACCESS_TOKEN 属性名，必须与仓库 secret 名保持一致
+          # 查看：https://github.com/hoishing-lam/resume/settings/secrets/actions
+          # 该 token 是 personal access token，至少需要本项目的代码修改权限
+          # 查看：https://github.com/settings/tokens?type=beta
+          # repository permissions -> contents: Read and Write
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
