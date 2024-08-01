@@ -20,7 +20,12 @@ jobs:
           version: 9.6.0 # 指定 pnpm 版本
           run_install: true # pnpm install dependencies recursively
       - name: Build
-        run: pnpm run build
+        run: |
+          pnpm run build
+          touch out/.nojekyll
+        # jekyll 不会处理以 _ 开头的文件，需要在 gh-pages 根目录下添加文件 .nojekyll 以禁止使用 jekyll 解析
+        # https://segmentfault.com/q/1010000019587945
+        # https://stackoverflow.com/questions/66764842/how-can-i-fix-404-error-importing-css-on-github-pages
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:

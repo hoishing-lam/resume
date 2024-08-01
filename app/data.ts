@@ -3,7 +3,7 @@ import type { Resume } from './types';
 const age = new Date().getFullYear() - 1993;
 
 export const resume: Resume = {
-  url: 'https://horshing-lam.github.io/resume',
+  url: 'https://hoishing-lam.github.io/resume',
   summary: '四年前端开发经验，有意向于广州寻找新的前端工程师岗位',
   profile: {
     name: '林海晟',
