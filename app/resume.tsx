@@ -14,7 +14,7 @@ export default function Resume(props: ResumeProps) {
   const { resume } = props;
 
   return (
-    <article className="bg-[#fff] p-[12px] mx-auto w-[760px] rounded-[8px]">
+    <article className="bg-[#fff] p-[12px] mx-auto md:w-[760px] w-full rounded-[8px]">
       <h2 className="text-center text-[24px] font-bold">
         {resume.profile.name}的个人简历
       </h2>
