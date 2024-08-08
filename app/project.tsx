@@ -14,11 +14,11 @@ export default function Project(props: ProjectProps) {
         <li key={project.name}>
           <h4 className="font-bold text-[16px]">{project.name}</h4>
           <div className="mt-[4px]">
-            <h5 className="font-bold text-[14px]">项目介绍</h5>
+            <h5 className="font-bold">项目介绍</h5>
             <span>{project.introduction}</span>
           </div>
           <div className="mt-[4px]">
-            <h5 className="font-bold text-[14px]">职责</h5>
+            <h5 className="font-bold">职责</h5>
             <ul>
               {project.responsibilities.map(responsibility => (
                 <li key={responsibility}>
@@ -30,7 +30,7 @@ export default function Project(props: ProjectProps) {
           </div>
           {project.challenges && (
             <div className="mt-[4px]">
-              <h5 className="font-bold text-[14px]">难点</h5>
+              <h5 className="font-bold">难点</h5>
               <ul>
                 {project.challenges.map(challenge => (
                   <li key={challenge}>
@@ -42,7 +42,7 @@ export default function Project(props: ProjectProps) {
             </div>
           )}
           <div className="mt-[4px]">
-            <h5 className="font-bold text-[14px]">成就</h5>
+            <h5 className="font-bold">成就</h5>
             <ul>
               {project.achievements.map(achievement => (
                 <li key={achievement}>

@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body,
+html {
+  font-size: 14px;
+  -webkit-print-color-adjust: exact; /* 用于正常打印颜色，有兼容问题 */
+}
+
+@media print {
+  @page {
+    margin: 12px 0;
+  }
+}
