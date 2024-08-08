@@ -11,9 +11,9 @@ export default function Section(props: SectionProps) {
   return (
     <section className={className}>
       <header className="flex items-center mb-[8px] pb-[8px] border-b-[1px] border-solid border-[#e0e0e0]">
-        <div className="flex items-center pl-[12px] pr-[80px] text-[18px] bg-teal-600 text-[#fff] rounded-[4px]">
+        <div className="flex items-center gap-[12px] px-[12px] py-[4px] text-[18px] bg-teal-600 text-[#fff] rounded-[4px]">
           {icon}
-          <h4 className="ml-[12px] font-bold">{title}</h4>
+          <h4 className="font-bold">{title}</h4>
         </div>
       </header>
       {children}

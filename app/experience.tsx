@@ -12,7 +12,7 @@ export default function Experience(props: ExperienceProps) {
         <li key={exp.company}>
           <div className="flex justify-between items-center">
             <h4 className="font-bold text-[16px]">{exp.company}</h4>
-            <span className="font-bold text-[14px]">
+            <span className="font-bold">
               {exp.startTime}-{exp.endTime}
             </span>
           </div>
