@@ -20,17 +20,17 @@ export default function Project(props: ProjectProps) {
           <div className="mt-[4px]">
             <h5 className="font-bold">职责</h5>
             <ul>
-              {project.responsibilities.map(responsibility => (
-                <li key={responsibility}>
+              {project.works.map(work => (
+                <li key={work}>
                   <Point />
-                  <span>{responsibility}</span>
+                  <span>{work}</span>
                 </li>
               ))}
             </ul>
           </div>
           {project.challenges && (
             <div className="mt-[4px]">
-              <h5 className="font-bold">难点</h5>
+              <h5 className="font-bold">挑战</h5>
               <ul>
                 {project.challenges.map(challenge => (
                   <li key={challenge}>
