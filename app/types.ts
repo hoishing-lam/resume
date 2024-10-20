@@ -32,7 +32,7 @@ export interface Education {
 export interface Project {
   name: string; // 项目名
   introduction: string;
-  responsibilities: string[]; // 工作内容
+  works: string[]; // 工作内容
   achievements: string[]; // 业绩成就
   challenges?: string[]; // 难点
 }
