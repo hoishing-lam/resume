@@ -4,7 +4,6 @@
 export interface Profile {
   name: string; // 名字
   gender: 'male' | 'female'; // 性别
-  age: number; // 年龄
   phone: string; // 电话
   email: string; // 邮箱
   languages?: string[]; // 语言
@@ -32,8 +31,8 @@ export interface Education {
 export interface Project {
   name: string; // 项目名
   introduction: string;
-  works: string[]; // 工作内容
-  achievements: string[]; // 业绩成就
+  techStack?: string[]; // 技术栈
+  achievements: string[]; // 工作与业绩成就
   challenges?: string[]; // 难点
 }
 
@@ -47,7 +46,7 @@ export interface Experience {
   endTime: string; // 结束工作时间
   department: string; // 部门
   introduction?: string; // 介绍
-  resignationReason?: string; // 离职原因
+  projects?: Project[]; // 项目
 }
 
 /**
@@ -55,11 +54,12 @@ export interface Experience {
  */
 export interface Resume {
   url?: string; // 在线简历链接
-  summary: string; // 概述
+  advantages: string[]; // 优势
   profile: Profile; // 基本信息
   educations: Education[]; // 学历
   experience: Experience[]; // 工作经历
-  projects: Project[]; // 项目经历
+  projects?: Project[]; // 其他项目经历
   skills?: string[]; // 专业技能
   links?: string[]; // 其他链接
+  contributions?: string[]; // 开源与技术贡献
 }

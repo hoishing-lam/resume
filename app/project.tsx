@@ -12,22 +12,16 @@ export default function Project(props: ProjectProps) {
     <ul className="flex flex-col gap-[16px]">
       {projects.map(project => (
         <li key={project.name}>
-          <h4 className="font-bold text-[16px]">{project.name}</h4>
+          <h4 className="font-bold text-[14px]">{project.name}</h4>
           <div className="mt-[4px]">
-            <h5 className="font-bold">项目介绍</h5>
             <span>{project.introduction}</span>
           </div>
-          <div className="mt-[4px]">
-            <h5 className="font-bold">职责</h5>
-            <ul>
-              {project.works.map(work => (
-                <li key={work}>
-                  <Point />
-                  <span>{work}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {project.techStack && (
+            <div className="mt-[4px] flex items-center gap-[8px]">
+              <h5 className="font-bold">技术栈</h5>
+              <span>{project.techStack.join(' + ')}</span>
+            </div>
+          )}
           {project.challenges && (
             <div className="mt-[4px]">
               <h5 className="font-bold">挑战</h5>
