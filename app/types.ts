@@ -18,6 +18,7 @@ interface School {
  * 教育经历
  */
 export interface Education {
+  key: string;
   school: School; // 学校
   degree: string; // 学历
   major: string | string[]; // 专业

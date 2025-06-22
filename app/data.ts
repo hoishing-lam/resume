@@ -15,6 +15,7 @@ export const resume: Resume = {
   },
   educations: [
     {
+      key: 'asu-cs',
       school: {
         name: '亚利桑那州立大学',
         introduction: 'QS 200-220'
@@ -25,6 +26,7 @@ export const resume: Resume = {
       endTime: '2017'
     },
     {
+      key: 'gdufs-cs',
       school: {
         name: '广东外语外贸大学'
       },
@@ -34,6 +36,7 @@ export const resume: Resume = {
       endTime: '2015'
     },
     {
+      key: 'gdufs-finance',
       school: {
         name: '广东外语外贸大学'
       },

@@ -9,10 +9,7 @@ export default function Education(props: EducationProps) {
   return (
     <ul>
       {educations.map(education => (
-        <li
-          key={education.school.name}
-          className="grid grid-cols-[35%_45%_20%]"
-        >
+        <li key={education.key} className="grid grid-cols-[35%_45%_20%]">
           <span className="font-bold">
             {education.major} ({education.degree})
           </span>
