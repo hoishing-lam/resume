@@ -1,0 +1,25 @@
+{
+  "base": {
+    "baseInfo": "基本信息",
+    "advantage": "优势",
+    "experience": "工作经历",
+    "personalPortfolio": "个人项目",
+    "contribution": "贡献",
+    "education": "教育背景",
+    "name": "姓名",
+    "phone": "电话",
+    "email": "邮箱",
+    "language": "语言",
+    "mandarin": "国语",
+    "english": "英语",
+    "cantonese": "粤语",
+    "techStack": "技术栈",
+    "achivement": "成就",
+    "challenge": "挑战"
+  },
+  "profile": {
+    "name": "林海晟",
+    "advantage1": "七年前端开发经验，能够独立完成中大型项目的开发工作，确保项目顺利推进和交付",
+    "advantage2": "擅长前端工程化实践与落地，有较好的逻辑思维与团队协作能力"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "base": {
+    "baseInfo": "Base Info",
+    "advantage": "Advantage",
+    "experience": "Experience",
+    "personalPortfolio": "Personal Portfolio",
+    "contribution": "Contribution",
+    "education": "Education",
+    "name": "Name",
+    "phone": "Phone",
+    "email": "Email",
+    "language": "Language",
+    "mandarin": "Mandarin",
+    "english": "English",
+    "cantonese": "Cantonese",
+    "techStack": "Tech Stack",
+    "achivement": "Achivement",
+    "challenge": "Challenge"
+  },
+  "profile": {
+    "name": "Haisheng Lin",
+    "advantage1": "七年前端开发经验，能够独立完成中大型项目的开发工作，确保项目顺利推进和交付",
+    "advantage2": "擅长前端工程化实践与落地，有较好的逻辑思维与团队协作能力"
+  }
+}
