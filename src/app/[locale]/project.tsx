@@ -38,7 +38,7 @@ export default function Project(props: ProjectProps) {
             </div>
           )}
           <div className="mt-[4px]">
-            <h5 className="font-bold">{t('achivement')}</h5>
+            <h5 className="font-bold">{t('achievement')}</h5>
             <ul>
               {project.achievements.map(achievement => (
                 <li key={achievement}>
