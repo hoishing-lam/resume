@@ -18,6 +18,7 @@ interface School {
  * 教育经历
  */
 export interface Education {
+  key: string;
   school: School; // 学校
   degree: string; // 学历
   major: string | string[]; // 专业
@@ -44,7 +45,6 @@ export interface Experience {
   title: string; // 职位
   startTime: string; // 开始工作时间
   endTime: string; // 结束工作时间
-  department: string; // 部门
   introduction?: string; // 介绍
   projects?: Project[]; // 项目
 }

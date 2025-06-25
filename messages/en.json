@@ -1,0 +1,76 @@
+{
+  "base": {
+    "baseInfo": "Base Info",
+    "advantage": "Advantage",
+    "experience": "Experience",
+    "personalPortfolio": "Personal Portfolio",
+    "contribution": "Contribution",
+    "education": "Education",
+    "name": "Name",
+    "phone": "Phone",
+    "email": "Email",
+    "language": "Language",
+    "mandarin": "Mandarin",
+    "english": "English",
+    "cantonese": "Cantonese",
+    "master": "Master",
+    "bachelor": "Bachelor",
+    "techStack": "Tech Stack",
+    "achievement": "Achievement",
+    "challenge": "Challenge",
+    "asu": "Arizona State University",
+    "gdufs": "Guangdong University of Foreign Studies",
+    "computerScience": "Computer Science",
+    "finance": "Finance",
+    "now": "now",
+    "feEngineer": "Frontend Engineer",
+    "seniorFeEngineer": "Senior Frontend Engineer"
+  },
+  "profile": {
+    "name": "Haisheng Lin",
+    "advantage1": "7 years of experience with delivery capability for medium-to-large scale projects",
+    "advantage2": "Skilled at frontend engineering practices, with strong logical thinking and team collaboration",
+    "experience": {
+      "gci": {
+        "company": "Guangzhou Jiaoxintou Technology Co.,Ltd",
+        "infra": {
+          "name": "Infrastructure",
+          "introduction": "To enhance quality and efficiency, the Fundamental Technologies Team is established to provide techical infrastructure and support for all business project teams.",
+          "challenge1": "Tech stack is outdated, lacking technical and foundational intrastructure, such as CI/CD, documentations, common resuable components.",
+          "challenge2": "Projects generally lack standardized management, suffer from low code quality, and contain excessive duplicate code. Poor reusability and modifiability result in inefficient development.",
+          "challenge3": "Some projects encounter rendering performance issues in map-based scenarios due to massive data volume, severely compromising system usability and user experience.",
+          "achievement1": "Responsible for technology selection and frontend tech stack upgrades, including migration from Vue2 to Vue3 with code refactoring, integration of TypeScript, linting tools to enforce development standards.",
+          "achievement2": "Drive frontend libraries construction, contribute some core components that are reused by 10+ projects.",
+          "achievement3": "Research CI/CD pipeline solutions and shared to other teams, reducing human errors in manual deployments and cutting time by 80%.",
+          "achievement4": "Research map tile technologies and applied to business projects, increasing fps from 10+ to 50+, which significantly improved system performance."
+        }
+      },
+      "kingsoft": {
+        "company": "Zhuhai Kingsoft Office Software Co.,Ltd",
+        "admin": {
+          "name": "Enterprise Admin System",
+          "introduction": "An enterprise admin system with multi-apps integrated, manages different kinds of enterprise assets. Main modules include corporate information, corporate structure, team management, operation log and enterprise security setting etc..",
+          "challenge1": "Compilation speed in development mode was too slow and impacted the efficiency due to large scale of project and obsolete technology stack",
+          "challenge2": "Due to business needs, web app features may differ to that in other environments and the build material of the project in one environment is mixed with irrelevant features of other environments",
+          "challenge3": "Simultaneous iteration of multiple business lines reduces project quality and maintainability",
+          "challenge4": "The business needs to support multiple languages, and the daily maintenance of multiple languages is complicated and repetitive, which increases the workload of multiple parties",
+          "achievement1": "Write unit test cases with Jest and increase average line coverage rate to above 85%. Improve delivery quality and ensure 0 fatal bugs in production",
+          "achievement2": "Design and implement solution for i18n resource management to reduce the costs of both maintenance and test regression by 0.5-1 hour per human resource in average, and extend the application to other busines",
+          "achievement3": "Research micro-frontend technologies and apply micro-app to integrate systems from other business teams."
+        }
+      },
+      "xiao": {
+        "company": "Guangdong Xiao Education Technology Co.,Ltd",
+        "course": {
+          "name": "Online Enrollment",
+          "introduction": "A hybrid app for parents to enroll courses for their children, is to provide high quality educational program and service for students and to improve the score and learning experience of students",
+          "achievement1": "By implementing the web exception monitoring system, debugging and fixing captured errors, to improve the efficiency to locate bugs, the error rate has been reduced from 16% to 11%",
+          "achievement2": "Optimize performance with the build compilation speed improved by 25%"
+        }
+      }
+    },
+    "contribution": {
+      "contribution1": "Maintain components and documentations for @antmjs/vantui"
+    }
+  }
+}
