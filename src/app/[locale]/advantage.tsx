@@ -9,7 +9,7 @@ export default function Advantage(props: AdvantageProps) {
   return (
     <ul>
       {advantages.map(advantage => (
-        <li key={advantage} className="flex items-center">
+        <li key={advantage}>
           <Point />
           <span>{advantage}</span>
         </li>

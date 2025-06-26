@@ -28,21 +28,21 @@
   },
   "profile": {
     "name": "Haisheng Lin",
-    "advantage1": "7 years of experience with delivery capability for medium-to-large scale projects",
-    "advantage2": "Skilled at frontend engineering practices, with strong logical thinking and team collaboration",
+    "advantage1": "7 years of frontend development experience, capable of independently developing medium to large-scale projects, ensuring their smooth progress and timely delivery",
+    "advantage2": "Proficient in implementing and standardizing frontend engineering practices and possesses strong analytical and problem-solving skills with excellent cross-functional collaboration abilities",
     "experience": {
       "gci": {
         "company": "Guangzhou Jiaoxintou Technology Co.,Ltd",
         "infra": {
-          "name": "Infrastructure",
-          "introduction": "To enhance quality and efficiency, the Fundamental Technologies Team is established to provide techical infrastructure and support for all business project teams.",
-          "challenge1": "Tech stack is outdated, lacking technical and foundational intrastructure, such as CI/CD, documentations, common resuable components.",
-          "challenge2": "Projects generally lack standardized management, suffer from low code quality, and contain excessive duplicate code. Poor reusability and modifiability result in inefficient development.",
-          "challenge3": "Some projects encounter rendering performance issues in map-based scenarios due to massive data volume, severely compromising system usability and user experience.",
-          "achievement1": "Responsible for technology selection and frontend tech stack upgrades, including migration from Vue2 to Vue3 with code refactoring, integration of TypeScript, linting tools to enforce development standards.",
-          "achievement2": "Drive frontend libraries construction, contribute some core components that are reused by 10+ projects.",
-          "achievement3": "Research CI/CD pipeline solutions and shared to other teams, reducing human errors in manual deployments and cutting time by 80%.",
-          "achievement4": "Research map tile technologies and applied to business projects, increasing fps from 10+ to 50+, which significantly improved system performance."
+          "name": "Core Technology Infrastructure",
+          "introduction": "Contributed to the establishment of a dedicated Core Technology Team aimed at enhancing company-wide development quality and efficiency. This team provided essential technical infrastructure and foundational capabilities to support all business project teams.",
+          "challenge1": "Outdated Tech Stack & Absence of Foundational Infrastructure: Inherited an outdated technology stack with significant gaps in foundational engineering practices, including no CI/CD, inadequate documentation/knowledge base, and lack of reusable component libraries.",
+          "challenge2": "Lack of Standardization & Technical Debt: Projects suffered from inconsistent practices, low code quality, and rampant code duplication, severely hampering maintainability, reusability, and overall development velocity and quality, ultimately impacting project delivery timelines.",
+          "challenge3": "Performance Bottlenecks in Map Rendering: Key projects utilizing maps faced severe rendering performance degradation and usability issues due to handling extremely large datasets.",
+          "achievement1": "Responsible for technology selection and modernization, including migration from Vue2 to Vue3 with code refactoring, integration of TypeScript, linting tools to enforce development standards.",
+          "achievement2": "Established frontend shared libraries. Contributed core components that are reused by 10+ business projects.",
+          "achievement3": "Implemented & Scaled CI/CD Pipeline: Researched, selected, and implemented a standardized CI/CD solution. Championed its adoption across projects, reducing manual deployment errors and saving 80%+ of build/deployment time previously spent on manual processes.",
+          "achievement4": "Solved Critical Map Rendering Performance: Investigated and implemented a tile-based map rendering solution to handle massive datasets. Successfully rolled out this optimized approach company-wide, resulting in FPS improvements from ~10 to 50+, resolving severe performance bottlenecks and dramatically enhancing system usability."
         }
       },
       "kingsoft": {
