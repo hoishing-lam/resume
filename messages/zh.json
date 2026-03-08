@@ -16,6 +16,7 @@
     "techStack": "技术栈",
     "achievement": "成就",
     "challenge": "挑战",
+    "certification": "专业证书",
     "master": "硕士",
     "bachelor": "学士",
     "asu": "亚利桑那州立大学",
@@ -24,7 +25,9 @@
     "finance": "金融学",
     "now": "至今",
     "feEngineer": "前端工程师",
-    "seniorFeEngineer": "高级前端工程师"
+    "seniorFeEngineer": "高级前端工程师",
+    "cet6": "英语六级 (CET-6)",
+    "qcsp": "计算机技术与软件专业技术资格 (中级-软件设计师)"
   },
   "profile": {
     "name": "林海晟",

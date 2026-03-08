@@ -62,4 +62,5 @@ export interface Resume {
   skills?: string[]; // 专业技能
   links?: string[]; // 其他链接
   contributions?: string[]; // 开源与技术贡献
+  certifications?: string[]; // 专业证书
 }

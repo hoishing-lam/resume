@@ -18,13 +18,16 @@
     "techStack": "Tech Stack",
     "achievement": "Achievement",
     "challenge": "Challenge",
+      "certification": "Certification",
     "asu": "Arizona State University",
     "gdufs": "Guangdong University of Foreign Studies",
     "computerScience": "Computer Science",
     "finance": "Finance",
     "now": "now",
     "feEngineer": "Frontend Engineer",
-    "seniorFeEngineer": "Senior Frontend Engineer"
+    "seniorFeEngineer": "Senior Frontend Engineer",
+    "cet6": "CET-6",
+    "qcsp": "Qualification of Computer and Software Professional (Software Engineer Designer)"
   },
   "profile": {
     "name": "Haisheng Lin",

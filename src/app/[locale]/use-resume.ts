@@ -131,6 +131,7 @@ export function useResume() {
     //     ]
     //   }
     // ],
+    certifications: [baseT('cet6'), baseT('qcsp')],
     skills: ['TypeScript', 'Vue', 'React', 'Webpack', 'Vite'],
     contributions: [t('contribution.contribution1')],
     links: ['https://github.com/hoishing-lam']
