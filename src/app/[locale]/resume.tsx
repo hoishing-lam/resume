@@ -5,6 +5,7 @@ import Advantage from './advantage';
 import Profile from './profile';
 import Education from './education';
 import Experience from './experience';
+import Certification from './certification';
 import Contribution from './contribution';
 import Project from './project';
 
@@ -34,6 +35,11 @@ export default function Resume(props: ResumeProps) {
       {resume.projects && (
         <Section className="mt-[8px]" title={t('personalPortfolio')}>
           <Project projects={resume.projects} />
+        </Section>
+      )}
+      {resume.certifications && (
+        <Section className="mt-[8px]" title={t('certification')}>
+          <Certification certifications={resume.certifications} />
         </Section>
       )}
       {resume.contributions && (
