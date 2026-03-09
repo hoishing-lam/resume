@@ -23,7 +23,7 @@ export default function Profile(props: ProfileProps) {
     {
       key: 'language',
       label: t('language'),
-      value: profile.languages?.join(', ')
+      value: profile.languages?.join('、')
     }
   ];
 

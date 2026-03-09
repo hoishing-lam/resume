@@ -7,7 +7,7 @@ export function useResume() {
 
   const resume: Resume = {
     url: 'https://hoishing-lam.github.io/resume',
-    advantages: [t('advantage1'), t('advantage2')],
+    advantages: [t('advantage1'), t('advantage2'), t('advantage3')],
     profile: {
       name: t('name'),
       gender: 'male',
@@ -59,9 +59,9 @@ export function useResume() {
             introduction: t('experience.gci.infra.introduction'),
             techStack: [
               'Vue3',
-              'Pinia',
-              'vue-router',
               'element-plus',
+              'tailwindcss',
+              'vite',
               'monorepo'
             ],
             achievements: [
@@ -87,7 +87,7 @@ export function useResume() {
           {
             name: t('experience.kingsoft.admin.name'),
             introduction: t('experience.kingsoft.admin.introduction'),
-            techStack: ['Vue2', 'Vuex', 'vue-router', 'element-ui', 'Webpack'],
+            techStack: ['Vue2', 'element-ui', 'Webpack'],
             achievements: [
               t('experience.kingsoft.admin.achievement1'),
               t('experience.kingsoft.admin.achievement2'),
