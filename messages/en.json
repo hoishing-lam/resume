@@ -18,7 +18,7 @@
     "techStack": "Tech Stack",
     "achievement": "Achievement",
     "challenge": "Challenge",
-      "certification": "Certification",
+    "certification": "Certification",
     "asu": "Arizona State University",
     "gdufs": "Guangdong University of Foreign Studies",
     "computerScience": "Computer Science",
@@ -31,8 +31,9 @@
   },
   "profile": {
     "name": "Haisheng Lin",
-    "advantage1": "7 years of frontend development experience, capable of independently developing medium to large-scale projects, ensuring their smooth progress and timely delivery",
+    "advantage1": "Master in Computer Science (QS world ranking top 200), 7 years of frontend development experience, capable of independently developing medium to large-scale projects, ensuring their smooth progress and timely delivery",
     "advantage2": "Proficient in implementing and standardizing frontend engineering practices and possesses strong analytical and problem-solving skills with excellent cross-functional collaboration abilities",
+    "advantage3": "National invention patent (Publication No. CN121561884A)",
     "experience": {
       "gci": {
         "company": "Guangzhou Jiaoxintou Technology Co.,Ltd",
@@ -42,10 +43,10 @@
           "challenge1": "Outdated Tech Stack & Absence of Foundational Infrastructure: Inherited an outdated technology stack with significant gaps in foundational engineering practices, including no CI/CD, inadequate documentation/knowledge base, and lack of reusable component libraries.",
           "challenge2": "Lack of Standardization & Technical Debt: Projects suffered from inconsistent practices, low code quality, and rampant code duplication, severely hampering maintainability, reusability, and overall development velocity and quality, ultimately impacting project delivery timelines.",
           "challenge3": "Performance Bottlenecks in Map Rendering: Key projects utilizing maps faced severe rendering performance degradation and usability issues due to handling extremely large datasets.",
-          "achievement1": "Responsible for technology selection and modernization, including migration from Vue2 to Vue3 with code refactoring, integration of TypeScript, linting tools to enforce development standards.",
-          "achievement2": "Established frontend shared libraries. Contributed core components that are reused by 10+ business projects.",
-          "achievement3": "Implemented & Scaled CI/CD Pipeline: Researched, selected, and implemented a standardized CI/CD solution. Championed its adoption across projects, reducing manual deployment errors and saving 80%+ of build/deployment time previously spent on manual processes.",
-          "achievement4": "Solved Critical Map Rendering Performance: Investigated and implemented a tile-based map rendering solution to handle massive datasets. Successfully rolled out this optimized approach company-wide, resulting in FPS improvements from ~10 to 50+, resolving severe performance bottlenecks and dramatically enhancing system usability."
+          "achievement1": "Established frontend shared libraries. Contributed core components that are reused by 10+ business projects.",
+          "achievement2": "Implemented & Scaled CI/CD Pipeline: Researched, selected, and implemented a standardized CI/CD solution. Championed its adoption across projects, reducing manual deployment errors and saving 80%+ of build/deployment time previously spent on manual processes.",
+          "achievement3": "Solved Critical Map Rendering Performance: Investigated and implemented a tile-based map rendering solution to handle massive datasets. Successfully rolled out this optimized approach company-wide, resulting in FPS improvements from ~10 to 50+, resolving severe performance bottlenecks and dramatically enhancing system usability.",
+          "achievement4": "To translate"
         }
       },
       "kingsoft": {

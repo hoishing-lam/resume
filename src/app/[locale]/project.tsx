@@ -15,9 +15,6 @@ export default function Project(props: ProjectProps) {
       {projects.map(project => (
         <li key={project.name}>
           <h4 className="font-bold text-[14px]">{project.name}</h4>
-          <div className="mt-[4px]">
-            <span>{project.introduction}</span>
-          </div>
           {project.techStack && (
             <div className="mt-[4px] flex items-center gap-[8px]">
               <h5 className="font-bold">{t('techStack')}</h5>
