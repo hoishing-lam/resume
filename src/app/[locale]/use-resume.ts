@@ -7,7 +7,12 @@ export function useResume() {
 
   const resume: Resume = {
     url: 'https://hoishing-lam.github.io/resume',
-    advantages: [t('advantage1'), t('advantage2'), t('advantage3')],
+    advantages: [
+      t('advantage1'),
+      t('advantage2'),
+      t('advantage3'),
+      t('advantage4')
+    ],
     profile: {
       name: t('name'),
       gender: 'male',
@@ -56,6 +61,34 @@ export function useResume() {
         endTime: baseT('now'),
         projects: [
           {
+            name: t('experience.gci.agentos.name'),
+            introduction: t('experience.gci.agentos.introduction'),
+            techStack: [
+              'Next.js 16',
+              'React 19',
+              'TypeScript',
+              'Tailwind CSS',
+              'Turborepo',
+              'shadcn/ui',
+              'Fastify',
+              'Prisma'
+            ],
+            achievements: [
+              t('experience.gci.agentos.achievement1'),
+              t('experience.gci.agentos.achievement2'),
+              t('experience.gci.agentos.achievement3'),
+              t('experience.gci.agentos.achievement4'),
+              t('experience.gci.agentos.achievement5')
+            ],
+            challenges: [
+              t('experience.gci.agentos.challenge1'),
+              t('experience.gci.agentos.challenge2'),
+              t('experience.gci.agentos.challenge3'),
+              t('experience.gci.agentos.challenge4'),
+              t('experience.gci.agentos.challenge5')
+            ]
+          },
+          {
             name: t('experience.gci.infra.name'),
             introduction: t('experience.gci.infra.introduction'),
             techStack: [
@@ -68,13 +101,7 @@ export function useResume() {
             achievements: [
               t('experience.gci.infra.achievement1'),
               t('experience.gci.infra.achievement2'),
-              t('experience.gci.infra.achievement3'),
               t('experience.gci.infra.achievement4')
-            ],
-            challenges: [
-              t('experience.gci.infra.challenge1'),
-              t('experience.gci.infra.challenge2'),
-              t('experience.gci.infra.challenge3')
             ]
           }
         ]
@@ -92,14 +119,7 @@ export function useResume() {
             techStack: ['Vue2', 'element-ui', 'Webpack'],
             achievements: [
               t('experience.kingsoft.admin.achievement1'),
-              t('experience.kingsoft.admin.achievement2'),
-              t('experience.kingsoft.admin.achievement3')
-            ],
-            challenges: [
-              t('experience.kingsoft.admin.challenge1'),
-              t('experience.kingsoft.admin.challenge2'),
-              t('experience.kingsoft.admin.challenge3'),
-              t('experience.kingsoft.admin.challenge4')
+              t('experience.kingsoft.admin.achievement2')
             ]
           }
         ]
@@ -109,18 +129,7 @@ export function useResume() {
         company: t('experience.xiao.company'),
         title: baseT('feEngineer'),
         startTime: '2019.04',
-        endTime: '2020.06',
-        projects: [
-          {
-            name: t('experience.xiao.course.name'),
-            introduction: t('experience.xiao.course.introduction'),
-            techStack: ['React', 'unstated-next', 'ant-design', 'Webpack'],
-            achievements: [
-              t('experience.xiao.course.achievement1'),
-              t('experience.xiao.course.achievement2')
-            ]
-          }
-        ]
+        endTime: '2020.06'
       }
     ],
     certifications: [baseT('cet6'), baseT('qcsp')],

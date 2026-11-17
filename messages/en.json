@@ -36,19 +36,30 @@
     "advantage1": "Master in Computer Science (QS world ranking top 200), 7 years of frontend development experience, capable of independently developing medium to large-scale projects, ensuring their smooth progress and timely delivery",
     "advantage2": "Proficient in implementing and standardizing frontend engineering practices and possesses strong analytical and problem-solving skills with excellent cross-functional collaboration abilities",
     "advantage3": "National invention patent (Publication No. CN121561884A)",
+    "advantage4": "Hands-on experience architecting an enterprise AI agent platform from 0 to 1, with deep knowledge of streaming sessions, generative UI (A2UI), multi-client monorepos and permission-driven admin systems",
     "experience": {
       "gci": {
         "company": "Guangzhou Jiaoxintou Technology Co.,Ltd",
+        "agentos": {
+          "name": "Enterprise Agent Operating System (GCI Agent OS)",
+          "introduction": "An enterprise-grade agent operating system covering the full agent lifecycle, streaming sessions, capability center (Skill/Tool/MCP/Plugin/Hook/Workflow), knowledge base and marketplace, secure sandbox, scheduled tasks and multi-tenant governance; delivered as a web workspace, admin portal, embeddable chat and open APIs.",
+          "challenge1": "The chat pipeline involves long-lived SSE, tool calls, reasoning, sub-agents, structured follow-up questions and stream resumption. Page refresh, session switching, stop/resend and concurrent views easily caused duplicated streams, cross-session leakage and inconsistent state.",
+          "challenge2": "Generative UI had to support state, conditional rendering and interactions for charts, forms and dashboards without executing model-generated code.",
+          "challenge3": "Web, portal and embed clients shared large amounts of message, session and request logic, but their identity models differed: user JWT, source=app scoped tokens, SSO tickets and cross-origin iframe hosts. Simple duplication caused maintenance overhead, behavioral drift and token privilege leakage.",
+          "challenge4": "The admin portal covered 30+ modules with multi-tenant and resource-level permissions; knowledge-base/plugin marketplace, audit and statistics semantics were complex, making consistency and delivery quality hard to guarantee.",
+          "challenge5": "In long conversations, message parts, tool calls, reasoning, sub-agent sessions and knowledge-base references produced multi-source state; pagination, replay, collapsing and real-time incremental rendering had to balance performance and consistency.",
+          "achievement1": "Core member from 0 to 1; responsible for the architecture and core implementation of the web workspace, admin portal, embed client and 14 shared packages; established a Turborepo monorepo, unified API client and data layer, 53 shadcn primitives, 49 AI Elements components, unit tests and GitLab CI/CD.",
+          "achievement2": "Built an in-house SSE session runtime: unified chunk protocol and reducer, message parts, pagination/replay/resume/abort, context-window usage ring, and a per-session stream lease ensuring a single stream owner; powered inline sub-agent sessions, structured ask_user follow-ups and visually merged continuations, eliminating duplicate streams and cross-session leakage after refresh, switching or stop/resend.",
+          "achievement3": "Designed the A2UI declarative generative-UI channel: spec/catalog schemas constrain model output and support element-level state, conditional rendering, lists and whitelisted actions; rendered 13+ components so AI-generated charts, forms and dashboards are interactive without executing arbitrary code; paired with an iframe micro-app sandbox and postMessage bridge (targetOrigin validation + token injection), and unified source=app authentication and scoped-token isolation for web/embed clients.",
+          "achievement4": "Built 30+ portal modules with multi-tenant and resource-level view/use/manage permissions, operation audit and multi-dimensional dashboards; enabled configuration-driven operations for agents, models, skills, MCP, plugins, workflows and scheduled tasks.",
+          "achievement5": "Built the knowledge-base/RAG product flow end to end, plus knowledge-base/plugin marketplaces: list/detail views, file tree and folder upload, parsing status, collaborators and approvals, citation backlinks and source-document preview, with session-level /plugin plugin/knowledge-base mounting."
+        },
         "infra": {
           "name": "Core Technology Infrastructure",
           "introduction": "Contributed to the establishment of a dedicated Core Technology Team aimed at enhancing company-wide development quality and efficiency. This team provided essential technical infrastructure and foundational capabilities to support all business project teams.",
-          "challenge1": "Outdated Tech Stack & Absence of Foundational Infrastructure: Inherited an outdated technology stack with significant gaps in foundational engineering practices, including no CI/CD, inadequate documentation/knowledge base, and lack of reusable component libraries.",
-          "challenge2": "Lack of Standardization & Technical Debt: Projects suffered from inconsistent practices, low code quality, and rampant code duplication, severely hampering maintainability, reusability, and overall development velocity and quality, ultimately impacting project delivery timelines.",
-          "challenge3": "Performance Bottlenecks in Map Rendering: Key projects utilizing maps faced severe rendering performance degradation and usability issues due to handling extremely large datasets.",
-          "achievement1": "Established frontend shared libraries. Contributed core components that are reused by 10+ business projects.",
+          "achievement1": "Established frontend shared libraries. Contributed core components that are reused by 10+ business projects, with 95%+ adoption, and filed a related national invention patent.",
           "achievement2": "Implemented & Scaled CI/CD Pipeline: Researched, selected, and implemented a standardized CI/CD solution. Championed its adoption across projects, reducing manual deployment errors and saving 80%+ of build/deployment time previously spent on manual processes.",
-          "achievement3": "Solved Critical Map Rendering Performance: Investigated and implemented a tile-based map rendering solution to handle massive datasets. Successfully rolled out this optimized approach company-wide, resulting in FPS improvements from ~10 to 50+, resolving severe performance bottlenecks and dramatically enhancing system usability.",
-          "achievement4": "To translate"
+          "achievement4": "During a critical delivery with limited frontend capacity, proactively built efficiency tooling: a template code generator plus AI Skills documentation; backend engineers used AI to turn requirement documents into DSL, and the DSL generated the final product code, ensuring on-time delivery."
         }
       },
       "kingsoft": {
@@ -56,23 +67,12 @@
         "admin": {
           "name": "Enterprise Admin System",
           "introduction": "An enterprise admin system with multi-apps integrated, manages different kinds of enterprise assets. Main modules include corporate information, corporate structure, team management, operation log and enterprise security setting etc..",
-          "challenge1": "Compilation speed in development mode was too slow and impacted the efficiency due to large scale of project and obsolete technology stack",
-          "challenge2": "Due to business needs, web app features may differ to that in other environments and the build material of the project in one environment is mixed with irrelevant features of other environments",
-          "challenge3": "Simultaneous iteration of multiple business lines reduces project quality and maintainability",
-          "challenge4": "The business needs to support multiple languages, and the daily maintenance of multiple languages is complicated and repetitive, which increases the workload of multiple parties",
           "achievement1": "Write unit test cases with Jest and increase average line coverage rate to above 85%. Improve delivery quality and ensure 0 fatal bugs in production",
-          "achievement2": "Design and implement solution for i18n resource management to reduce the costs of both maintenance and test regression by 0.5-1 hour per human resource in average, and extend the application to other busines",
-          "achievement3": "Research micro-frontend technologies and apply micro-app to integrate systems from other business teams."
+          "achievement2": "Design and implement solution for i18n resource management to reduce the costs of both maintenance and test regression by 0.5-1 hour per human resource in average, and extend the application to other business teams."
         }
       },
       "xiao": {
-        "company": "Guangdong Xiao Education Technology Co.,Ltd",
-        "course": {
-          "name": "Online Enrollment",
-          "introduction": "A hybrid app for parents to enroll courses for their children, is to provide high quality educational program and service for students and to improve the score and learning experience of students",
-          "achievement1": "By implementing the web exception monitoring system, debugging and fixing captured errors, to improve the efficiency to locate bugs, the error rate has been reduced from 16% to 11%",
-          "achievement2": "Optimize performance with the build compilation speed improved by 25%"
-        }
+        "company": "Guangdong Xiao Education Technology Co.,Ltd"
       }
     },
     "contribution": {
