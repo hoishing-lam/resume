@@ -17,26 +17,28 @@ export default function Project(props: ProjectProps) {
 
   return (
     <li>
-      <div className="flex justify-between items-baseline gap-[8px]">
-        <div className="flex items-baseline gap-[8px]">
-          <h4 className="font-bold text-[14px]">{project.name}</h4>
-          <span className="text-[12px] text-[#666]">
+      <div className="flex flex-wrap justify-between items-baseline gap-x-2 gap-y-1">
+        <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+          <h4 className="font-bold text-sm">{project.name}</h4>
+          <span className="text-xs text-muted-foreground">
             {project.company
               ? `${project.company} · ${project.title}`
               : t('personalPortfolio')}
           </span>
         </div>
-        {period && <span className="text-[12px]">{period}</span>}
+        {period && <span className="shrink-0 text-xs">{period}</span>}
       </div>
-      <p className="mt-[4px]">{project.introduction}</p>
+      <p className="mt-1">{project.introduction}</p>
       {project.techStack && (
-        <div className="mt-[4px] flex items-center gap-[8px]">
-          <h5 className="font-bold">{t('techStack')}</h5>
+        <div className="mt-1 flex items-baseline gap-2">
+          <h5 className="shrink-0 whitespace-nowrap font-bold">
+            {t('techStack')}
+          </h5>
           <span>{project.techStack.join(' + ')}</span>
         </div>
       )}
       {project.challenges && (
-        <div className="mt-[4px]">
+        <div className="mt-1">
           <h5 className="font-bold">{t('challenge')}</h5>
           <ul>
             {project.challenges.map(challenge => (
@@ -48,7 +50,7 @@ export default function Project(props: ProjectProps) {
           </ul>
         </div>
       )}
-      <div className="mt-[4px]">
+      <div className="mt-1">
         <h5 className="font-bold">{t('achievement')}</h5>
         <ul>
           {project.achievements.map(achievement => (
@@ -60,15 +62,15 @@ export default function Project(props: ProjectProps) {
         </ul>
       </div>
       {project.links && (
-        <div className="mt-[4px] flex items-center gap-[8px]">
-          <h5 className="font-bold">{t('link')}</h5>
+        <div className="mt-1 flex items-baseline gap-2">
+          <h5 className="shrink-0 whitespace-nowrap font-bold">{t('link')}</h5>
           {project.links.map(link => (
             <a
               key={link}
               href={link}
               target="_blank"
               rel="noreferrer"
-              className="text-teal-600 underline"
+              className="break-all text-primary underline"
             >
               {link}
             </a>

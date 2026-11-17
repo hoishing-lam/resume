@@ -21,7 +21,7 @@ export default function HomePage({
   const resume = useResume();
 
   return (
-    <main className="box-border md:p-[24px] md:bg-[#23292d]">
+    <main className="box-border md:p-6 md:bg-muted print:bg-transparent print:p-0">
       <Resume resume={resume} />
     </main>
   );

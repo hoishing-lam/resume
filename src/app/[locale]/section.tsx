@@ -12,10 +12,10 @@ export default function Section(props: SectionProps) {
 
   return (
     <section className={className}>
-      <header className="flex items-center mb-[8px] pb-[8px] border-b-[1px] border-solid border-[#e0e0e0]">
-        <div className="flex items-center gap-[12px] px-[12px] py-[4px] text-[18px] bg-teal-600 text-[#fff] rounded-[4px]">
+      <header className="flex items-center mb-2 pb-2 border-b border-solid border-border">
+        <div className="flex items-center gap-3 px-3 py-1 bg-primary text-primary-foreground rounded">
           {icon}
-          <h4 className="font-bold">{title}</h4>
+          <h4 className="font-bold text-base">{title}</h4>
         </div>
       </header>
       {children}

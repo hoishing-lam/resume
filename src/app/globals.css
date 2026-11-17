@@ -1,9 +1,49 @@
 @import "tailwindcss";
 
-body,
+/*
+ * 语义色 token：组件里只用 bg-primary / text-muted-foreground 这类工具类，
+ * 具体色值集中维护在这里，方便整体换主题。
+ */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+}
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.6 0.1038 184.7); /* teal-600 #0d9488，可按品牌替换 */
+  --primary-foreground: oklch(1 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --border: oklch(0.922 0 0);
+}
+
+/*
+ * 根字号固定 16px，保证 Tailwind 的 rem 刻度等于设计稿 px（p-3 = 12px）。
+ * 正文默认字号由简历容器的 text-sm 控制，不在 body 上全局覆盖。
+ */
 html {
-  font-size: 14px;
+  font-size: 16px;
+}
+
+body {
   -webkit-print-color-adjust: exact; /* 用于正常打印颜色，有兼容问题 */
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
 }
 
 @media print {

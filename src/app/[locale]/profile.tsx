@@ -28,7 +28,7 @@ export default function Profile(props: ProfileProps) {
   ];
 
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex flex-col gap-1 md:flex-row md:justify-between md:items-center print:flex-row print:justify-between print:items-center">
       {items.map(item => (
         <span key={item.key}>
           {item.label}: {item.value}

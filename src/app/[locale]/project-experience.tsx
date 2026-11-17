@@ -24,7 +24,7 @@ export default function ProjectExperience(props: ProjectExperienceProps) {
   ];
 
   return (
-    <ul className="flex flex-col gap-[16px]">
+    <ul className="flex flex-col gap-4">
       {items.map(item => (
         <Project
           key={`${item.company ?? 'personal'}-${item.name}`}
