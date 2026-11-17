@@ -49,6 +49,7 @@ export function useResume() {
     ],
     experience: [
       {
+        id: 'gci',
         company: t('experience.gci.company'),
         title: baseT('seniorFeEngineer'),
         startTime: '2023.04',
@@ -79,6 +80,7 @@ export function useResume() {
         ]
       },
       {
+        id: 'kingsoft',
         company: t('experience.kingsoft.company'),
         title: baseT('feEngineer'),
         startTime: '2020.08',
@@ -103,6 +105,7 @@ export function useResume() {
         ]
       },
       {
+        id: 'xiao',
         company: t('experience.xiao.company'),
         title: baseT('feEngineer'),
         startTime: '2019.04',
@@ -120,17 +123,6 @@ export function useResume() {
         ]
       }
     ],
-    // projects: [
-    //   {
-    //     name: '国际化自动化工具',
-    //     introduction:
-    //       '为提高国际化流程的效率，该工具可自动提取项目源码中的中文并生成待翻译的多语言 excel 表，该表翻译完毕可读取其中内容并转化为项目源码。',
-    //     techStack: ['Node.js', 'commander'],
-    //     achievements: [
-    //       '提高了国际化流程的效率，减少了 60% 的时间成本，提取中文的正确率达 80% 以上'
-    //     ]
-    //   }
-    // ],
     certifications: [baseT('cet6'), baseT('qcsp')],
     skills: ['TypeScript', 'Vue', 'React', 'Webpack', 'Vite'],
     contributions: [t('contribution.contribution1')],

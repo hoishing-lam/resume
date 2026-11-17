@@ -7,7 +7,7 @@ import Education from './education';
 import Experience from './experience';
 import Certification from './certification';
 import Contribution from './contribution';
-import Project from './project';
+import ProjectExperience from './project-experience';
 
 interface ResumeProps {
   resume: Resume;
@@ -32,11 +32,12 @@ export default function Resume(props: ResumeProps) {
       <Section className="mt-[8px]" title={t('experience')}>
         <Experience experience={resume.experience} />
       </Section>
-      {resume.projects && (
-        <Section className="mt-[8px]" title={t('personalPortfolio')}>
-          <Project projects={resume.projects} />
-        </Section>
-      )}
+      <Section className="mt-[8px]" title={t('project')}>
+        <ProjectExperience
+          experience={resume.experience}
+          personalProjects={resume.personalProjects}
+        />
+      </Section>
       {resume.certifications && (
         <Section className="mt-[8px]" title={t('certification')}>
           <Certification certifications={resume.certifications} />
